@@ -1,0 +1,180 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navbar Logo */
+
+#logo img{
+    height: 76px;
+    padding: 4px 40px;
+}
+
+/* Navbar List  */
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li a{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: azure;
+    text-decoration: none;
+    font-size: 1.3 rem;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+ul li a:hover{
+    color: rgb(85, 94, 94);
+    background-color: rgb(230, 228, 226);
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    padding: 100px 300px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#home::before{
+    background-image: url('../images/bg.jpg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 63%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.89;
+    padding: ;
+}
+
+
+#home p{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+/* Services Section */
+
+.services{
+    margin: 34px;
+    display: flex;
+}
+
+.services .box{
+    border: 2px solid brown;
+}
+
+.services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+.box{
+    padding: 34px;
+    margin: 2px 30px;
+    border-radius: 23px;
+    background-color: #d2d2d2;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-family: 'Solway', serif;
+    font-size: 3rem;
+    color: #2b2a29;
+    padding: 12px;
+    text-align: center;
+    margin: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2 rem;
+    padding: 12px;
+}
+.btn{
+    background-color: brown;
+    color: white;
+    height: 3rem;
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Client Section */
+
+#client-section{
+    height: 330px;
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 40px;
+}
+
+#client img{
+    height: 160px;
+}
+
